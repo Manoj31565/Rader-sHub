@@ -1,0 +1,983 @@
+﻿* {
+    border-style: inherit;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    min-width: 0vw;
+    min-height: 0vw;
+    max-width: none;
+    max-height: none;
+    overflow: visible;
+    aspect-ratio: auto;
+    box-sizing: border-box;
+    object-fit: fill;
+    position: static;
+    clear: none;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+.page-wrapper 
+{
+    float: none;
+}
+
+    .main-wrapper 
+    {
+        position: relative;
+        float: none;
+    }
+
+        .section-home-hero 
+        {
+            position: relative;
+            float: none;
+        }
+
+
+            .home-hero-grid 
+            {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                align-items: start;
+                justify-content: stretch;
+                align-content: stretch;
+                position: relative;
+                float: none;
+            }
+                .logo 
+                {
+                    position: sticky;
+                    top: 0;
+                    height: 100vh;
+                    overflow: hidden;
+                }
+
+                .logo img
+                {
+                    column-span: inherit;
+                    display: inline-block;
+                    vertical-align: baseline;
+                    flex-direction: column; 
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: sticky;
+                }
+
+                .home-hero-right 
+                {
+                    align-content: stretch;
+                    display: flex;
+                    flex-direction: column;
+                    overflow-y: auto;
+                }
+
+                    .button-section
+                    {
+                        flex-shrink: inherit;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                        grid-template-rows: 1fr;
+                        align-items: start;
+                        justify-content: stretch;
+                        align-content: stretch;
+                        position: relative;
+                        float: none;
+                    }
+
+                        #homeButtonMain
+                        {
+                            height: 5vw;
+                            background-color: #cf5260;
+                            align-content: center;
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            padding-block-start: 2vw;
+                            font-size: 1.25vw;
+                            color: white;
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            cursor: pointer;
+                            transition: 0.3s;
+                        }
+
+                            #homeButtonMain:hover 
+                            {
+                                background: #cf5260;
+                            }
+
+                        #productsButton
+                        {
+                            height: 5vw;
+                            background-color: #cf5260;
+                            align-content: center;
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            padding-block-start: 2vw;
+                            font-size: 1.25vw;
+                            color: white;
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            cursor: pointer;
+                            transition: 0.3s;
+                        }
+
+                            #productsButton:hover 
+                            {
+                                background: #cf5260;
+                            }
+
+                        #servicesButton
+                        {
+                            height: 5vw;
+                            background-color: #cf5260;
+                            align-content: center;
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            padding-block-start: 2vw;
+                            font-size: 1.25vw;
+                            color: white;
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            cursor: pointer;
+                            transition: 0.3s;
+                        }
+
+                            #servicesButton:hover 
+                            {
+                                background: #cf5260;
+                            }
+
+                        #forumsButton
+                        {
+                            height: 5vw;
+                            background-color: #cf5260;
+                            align-content: center;
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            padding-block-start: 2vw;
+                            font-size: 1.25vw;
+                            color: white;
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            cursor: pointer;
+                            transition: 0.3s;
+                        }
+
+                            #forumsButton:hover 
+                            {
+                                background: #cf5260;
+                            }
+
+                        #registerButton
+                        {
+                            height: 5vw;
+                            background-color: #cf5260;
+                            align-content: center;
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            padding-block-start: 2vw;
+                            font-size: 1.25vw;
+                            color: white;
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            cursor: pointer;
+                            transition: 0.3s;
+                        }
+
+                            #registerButton:hover 
+                            {
+                                background: #cf5260;
+                            }
+
+                    .home-hero-right-top
+                    {
+                        flex-shrink: inherit;
+                        display: flex;
+                        flex-direction: column;
+                        align-content: stretch;
+                        justify-content: space-between;
+                        padding: 5vw 6vw 4vw 6vw;
+                    }
+                        
+                        .margin-bottom
+                        {
+                            flex-shrink: inherit;
+                        }
+                            
+                            .overflow-hidden-1
+                            {
+                                float: none;
+                            }
+
+                                .overflow-hidden-1 h1 
+                                {
+                                    overflow: hidden;
+                                    float: none;
+                                    font-size: 8vw;
+                                    line-height: 100%;
+                                    color: black;
+                                    font-family: Impact;
+                                    font-weight: 400;
+                                }
+                            
+                            .overflow-hidden-2
+                            {
+                                overflow: hidden;
+                                float: none;
+                            }
+
+                                .overflow-hidden-2 h1 
+                                {
+                                    overflow: hidden;
+                                    font-size: 8vw;
+                                    line-height: 100%;
+                                    color: black;
+                                    font-family: Impact;
+                                    font-weight: 400;
+                                }
+        
+                        .div-block
+                        {
+                            flex-shrink: inherit;
+                        }
+
+                            .margin-bottom-0
+                            {
+                                padding-block-start: 5vw;
+                                float: none;
+                            }
+
+                                .margin-bottom-0 p 
+                                {
+                                    font-size: 1.5vw;
+                                    line-height: 130%;
+                                    color: #666;
+                                    font-style: italic;
+                                }
+
+                            .max-width-large
+                            {
+                                padding-block-start: 2vw;
+                                width: 100%;
+                                float: none;
+                            }
+
+                                .max-width-large h2 
+                                {
+                                    font-size: 3vw;
+                                    line-height: 120%;
+                                    color: black;
+                                    font-weight: 700;
+                                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                }    
+                            
+                    .home-hero-right-bottom
+                    {
+                        flex-shrink: inherit;
+                        display: flex;
+                        flex-direction: column;
+                        align-content: stretch;
+                        justify-content: space-between;
+                        padding: 6vw 6vw 8vw 6vw;
+                    }
+
+                        .margin-bottom-1
+                        {
+                            flex-shrink: inherit;
+                            margin-bottom: 2vw;
+                        }
+
+                            .margin-bottom-1 p 
+                            {
+                                font-size: 1.5vw;
+                                line-height: 130%;
+                                color: #666;
+                                font-weight: 500;
+                                font-style: italic;
+                            }
+
+                        .margin-bottom-2
+                        {
+                            flex-shrink: inherit;
+                            margin-bottom: 2vw;
+                        }
+
+                            .margin-bottom-2-1
+                            {
+                                margin-bottom: 0.125vw;
+                                float: none;
+                            }
+                                
+                                .overflow-hidden-4
+                                {
+                                    overflow: hidden;
+                                    float: none;
+                                }
+
+                                    .overflow-hidden-4 h3 
+                                    {
+                                        font-weight: 100;
+                                        font-size: 5vw;
+                                        text-transform: capitalize;
+                                        line-height: 100%;
+                                        color: black;
+                                        font-family: Impact;
+                                    }
+                            
+                            .margin-bottom-2-2
+                            {
+                                margin-bottom: 0.125vw;
+                                float: none;
+                            }
+                                
+                                .overflow-hidden-5
+                                {
+                                    overflow: hidden;
+                                    float: none;
+                                }
+                                    .overflow-hidden-5 h3 
+                                    {
+                                        font-weight: 100;
+                                        font-size: 5vw;
+                                        text-transform: capitalize;
+                                        line-height: 100%;
+                                        color: black;
+                                        font-family: Impact;
+                                    }
+                            
+                            .margin-bottom-2-3
+                            {
+                                margin-bottom: 0.125vw;
+                                float: none;
+                            }
+                                
+                                .overflow-hidden-6
+                                {
+                                    overflow: hidden;
+                                    float: none;
+                                }
+                                    .overflow-hidden-6 h3 
+                                    {
+                                        font-weight: 100;
+                                        font-size: 5vw;
+                                        text-transform: capitalize;
+                                        line-height: 100%;
+                                        color: black;
+                                        font-family: Impact;
+                                    }
+
+                            .overflow-hidden-3
+                            {
+                                overflow: hidden;
+                                float: none;
+                            }
+
+                                .overflow-hidden-3 h3 
+                                {
+                                    font-weight: 100;
+                                    font-size: 5vw;
+                                    text-transform: capitalize;
+                                    line-height: 100%;
+                                    color: black;
+                                    font-family: Impact;
+                                }
+                        
+                        .margin-bottom-3
+                        {
+                            margin-bottom: 8vw;
+                        }
+
+                            .max-width-large-1
+                            {
+                                width: 100%;
+                                float: none;
+                                font-weight: 400;
+                                line-height: 160%;
+                            }
+
+                                .max-width-large-1 text1
+                                {
+                                    font-weight: 400;
+                                    font-size: 1.5vw;
+                                    line-height: 160%;
+                                    color: gray;
+                                }
+                                
+                                .max-width-large-1 text2
+                                {
+                                    padding-block-start: 2.5vw;
+                                    font-weight: 400;
+                                    font-size: 1.5vw;
+                                    line-height: 160%;
+                                    color: gray;
+                                }
+        .section-home-projects
+        {
+            position: relative;
+        }
+            .section-top
+            {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8vw;
+                padding: 10vw 6vw 6vw 3vw;
+            }
+
+                .div-block-0
+                {
+
+                }
+
+                    .margin-bottom-4
+                    {
+                        margin-bottom: 0.5vw;
+                    }
+
+                        .overflow-hidden-7
+                        {
+                            overflow: hidden;
+                        }
+
+                            .overflow-hidden-7 textarea1
+                            {
+                                font-family: Impact;
+                                font-weight: 400;
+                                font-size: 12vw;
+                                line-height: 100%;
+                                color: black;
+                            }
+
+                    .max-width-huge
+                    {
+
+                    }
+
+                        .max-width-huge textarea2
+                        {
+                            overflow: visible;
+                            width: 75%;
+                            padding-block-start: 0.75vw;
+                            font-weight: 600;
+                            font-size: 3.5vw; 
+                            line-height: 110%;
+                            color: black;
+                            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        }
+
+            .collection-list-wrapper 
+            {
+
+            }
+
+                .collection-list 
+                {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    justify-content: stretch;
+                    align-content: stretch;
+                }
+
+                    .collection-item 
+                    {
+
+                    }
+
+                        .collection-item img 
+                        {
+                            padding: 0.1vw 0.1vw 0.1vw 0.1vw;
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+                            position: relative;
+                            z-index: initial;
+                        }
+
+                        .collection-item h2 
+                        {
+                            
+                        }
+
+                        .collection-item p 
+                        {
+                            
+                        }
+
+        .section-home-services
+        {
+            position: relative;
+        }
+
+            .section-top-1
+            {
+                display: flex;
+                flex-direction: column;
+                gap: 8vw;
+                padding: 10vw 6vw 6vw 3vw;
+            }
+
+                .div-block-1
+                {
+                    flex-shrink: inherit;
+                }
+
+                    .margin-bottom-5
+                    {
+                        margin-bottom: 1.5vw;
+                    }
+
+                        .overflow-hidden-8
+                        {
+                            overflow: hidden;
+                        }
+
+                            .overflow-hidden-8 textarea3
+                            {
+                                font-family: Impact;
+                                font-weight: 400;
+                                font-size: 12vw;
+                                line-height: 100%;
+                                color: black;
+                            }
+
+                        .max-width-huge-1
+                        {
+                            width: 100%;
+                            max-width: 87.5vw;
+                        }
+
+                            .max-width-huge-1 textarea4 
+                            {
+                                width: 75%;
+                                font-weight: 600;
+                                font-size: 3.5vw;
+                                line-height: 110%;
+                                color: black;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            }
+
+            .home-service-item-0
+            {
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                align-items: start;
+                justify-content: stretch;
+                align-content: stretch;
+                position: relative;
+            }
+            .home-service-item-1
+            {
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                align-items: start;
+                justify-content: stretch;
+                align-content: stretch;
+                position: relative;
+            }
+            .home-service-item-2
+            {
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                align-items: start;
+                justify-content: stretch;
+                align-content: stretch;
+                position: relative;
+            }
+            .home-service-item-3
+            {
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                align-items: start;
+                justify-content: stretch;
+                align-content: stretch;
+                position: relative;
+            }
+
+                .home-service-item-image
+                {
+                    column-span: inherit;
+                    width: 50%;
+                    height: 100vh;
+                    overflow: hidden;
+                    position: relative;
+                }
+                    
+                    .service-image 
+                    {
+                        height: 100vh;
+                        overflow: hidden;
+                    }
+
+                    .service-image img
+                    {
+                        column-span: inherit;
+                        display: inline-block;
+                        vertical-align: baseline;
+                        width: 100%;
+                        height: 100%;
+                        max-width: 100%;
+                        object-fit: cover;
+                    }
+
+
+                .home-service-item-content
+                {
+                    column-span: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2.5vw 5vw 5vw 5vw;
+                    overflow: visible;
+                }
+
+                    .margin-bottom-6
+                    {
+                        flex-shrink: inherit;
+                        display: block;
+                        margin-bottom: 3vw;
+                    }
+
+                        .margin-bottom-7
+                        {
+
+                        }
+
+                            .overflow-hidden-9
+                            {
+                                overflow: hidden;
+                            }
+
+                                .overflow-hidden-9 textarea5
+                                {
+                                    font-weight: 400;
+                                    font-size: 7vw;
+                                    height: 100%;
+                                    color: black;
+                                    font-family: Impact;
+                                }
+
+                        .margin-bottom-8
+                        {
+                            margin-bottom: 1vw;
+                        }
+
+                            .overflow-hidden-10
+                            {
+                                overflow: hidden;
+                            }
+
+                                .overflow-hidden-10 textarea6
+                                {
+                                    overflow: visible;
+                                    font-weight: 400;
+                                    font-size: 7vw;
+                                    height: 100%;
+                                    color: black;
+                                    font-family: Impact;
+                                }
+
+                        .max-width-large-2
+                        {
+                            width: 100%;
+                        }
+
+                            .max-width-large-2 textarea7
+                            {
+                                font-weight: 600;
+                                font-size: 2.5vw;
+                                height: 120%;
+                                color: black;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            }
+
+                    .div-block-2
+                    {
+                        flex-shrink: inherit;
+                        display: block;
+                    }
+
+                        .margin-bottom-9
+                        {
+                            margin-bottom: 2vw;
+                        }
+
+                            .margin-bottom-9 textarea8
+                            {
+                                font-weight: 500;
+                                height: 130%;
+                                letter-spacing: normal;
+                                font-style: italic;
+                                color: gray;
+                                font-size: 1vw;
+                            }
+
+                        .home-services-list
+                        {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-template-rows: 1fr 1fr;
+                            align-content: center;
+                            justify-content: stretch;
+                            column-gap: 3vw;
+                            row-gap: 1.25vw;
+                        }
+
+                            #serviceButton
+                            {
+                                display: inline-block;
+                                resize: none;
+                                font-weight: 600;
+                                font-size: 1vw;
+                                line-height: 140%;
+                                color: black;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            }
+footer 
+{
+    display: flex;
+    flex-direction: column;
+    padding: 6vw 6vw 2vw 6vw;
+    min-height: 120vh;
+    position: relative;
+    text-align: center;
+    background: black;
+    font-size: 1vw;
+}
+
+    .footer-top
+    {
+        flex-shrink: inherit;
+        display: block;
+        position: static;
+    }
+
+        .overflow-hidden-11
+        {
+            overflow: hidden;
+        }
+
+            .overflow-hidden-11 z
+            {
+                font-weight: 400;
+                font-family: Impact;
+                color: white;
+                font-size: 17vw;
+                line-height: 100%;
+                background: black;
+                width: 80%;
+                resize: none;
+                overflow: hidden;
+                margin-bottom: 5vw;
+            }
+
+    .footer-bottom
+    {
+        flex-shrink: inherit;
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+
+        .footer-nav
+        {
+            flex-shrink: inherit;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 25vw;
+            justify-content: stretch;
+            align-content: stretch;
+        }
+
+            .footer-column-0
+            {
+                display: flex;
+                flex-direction: column;
+                gap: 2vw;
+                width: 0.1vw;
+            }
+
+                .footer-column-0 text_area 
+                {
+                    flex-shrink: inherit;
+                    display: block;
+                    font-weight: 500;
+                    line-height: 130%;
+                    text-align: left;
+                    font-style: italic;
+                    background: black;
+                    color: lightgrey;
+                    resize: none;
+                    font-size: 1.25vw;
+                }
+
+            .footer-column-1
+            {
+                display: flex;
+                flex-direction: column;
+                gap: 2vw;
+                width: 5vw
+            }
+
+                .footer-column-1 text_area 
+                {
+                    flex-shrink: inherit;
+                    display: block;
+                    font-weight: 500;
+                    line-height: 130%;
+                    text-align: left;
+                    font-style: italic;
+                    background: black;
+                    color: lightgrey;
+                    resize: none;
+                    font-size: 1.25vw;
+                }
+
+            .footer-column-2
+            {
+                display: flex;
+                flex-direction: column;
+                gap: 2vw;
+                width: 2vw
+            }
+
+                .footer-column-2 text_area 
+                {
+                    flex-shrink: inherit;
+                    display: block;
+                    font-weight: 500;
+                    line-height: 130%;
+                    text-align: left;
+                    font-style: italic;
+                    background: black;
+                    color: lightgrey;
+                    resize: none;
+                    font-size: 1.25vw;
+                }
+
+                .nav
+                {
+                    flex-shrink: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.35vw;
+                }
+
+                    #homeButtonFooter
+                    {
+                        font-size: 1vw;
+                        background-color: black;
+                        color: white;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+
+                    #servicesButtonFooter
+                    {
+                        font-size: 1vw;
+                        background-color: black;
+                        color: white;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+
+                    #aboutButtonFooter
+                    {
+                        font-size: 1vw;
+                        background-color: black;
+                        color: white;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+
+                    #contactButtonFooter
+                    {
+                        font-size: 1vw;
+                        background-color: black;
+                        color: white;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+
+                    #signInButtonFooter
+                    {
+                        font-size: 1vw;
+                        background-color: black;
+                        color: white;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+
+                    #registerButtonFooter
+                    {
+                        font-size: 1vw;
+                        background-color: black;
+                        color: white;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+
+                    #forumsButtonFooter
+                    {
+                        font-size: 1vw;
+                        background-color: black;
+                        color: white;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+
+                    #uploadsButtonFooter
+                    {
+                        font-size: 1vw;
+                        background-color: black;
+                        color: white;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+
+                    #instagramButtonFooter
+                    {
+                        font-size: 1vw;
+                        background-color: black;
+                        color: white;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+
+                    #linkedinButtonFooter
+                    {
+                        font-size: 1vw;
+                        background-color: black;
+                        color: white;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+
+                    #youtubeButtonFooter
+                    {
+                        font-size: 1vw;
+                        background-color: black;
+                        color: white;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+
+        .footer-bottom-grid
+        {
+            margin-top: 5vw;
+            flex-shrink: inherit;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+            .footer-bottom-grid textareafooter
+            {
+                resize: none;
+                width: 25vw;
+                background: black;
+                color: white;
+                font-size: 0.75vw;
+            }

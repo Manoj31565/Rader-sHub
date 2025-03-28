@@ -1,89 +1,326 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.5.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.5.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rader's Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-wrapper">
+            <div class="section-home-hero">
+                <div class="home-hero-grid">
+                    <div class="logo">
+                        <img src="Images/RadoGames_Logo_3.png" alt="Logo" class="image">
+                    </div>
+                    <div class="home-hero-right">
+                        <div class="button-section">
+                            <button id="homeButtonMain">HOME</button>
+                            <button id="productsButton">PRODUCTS</button>
+                            <button id="servicesButton">SERVICES</button>
+                            <button id="forumsButton">FORUMS</button>
+                            <button id="registerButton">REGISTER</button>
+                        </div>
+                        <div class="home-hero-right-top">
+                            <div class="margin-bottom">
+                                <div class="overflow-hidden-1">
+                                    <h1>RADER'S</h1>
+                                </div>
+                                <div class="overflow-hidden-2">
+                                    <h1>HUB</h1>
+                                </div>
+                            </div>
+                            <div class="div-block">
+                                <div class="margin-bottom-0">
+                                    <p>(Based in India)</p>
+                                </div>
+                                <div class="max-width-large">
+                                    <h2>Crafting Games, Apps and Game Mechanics and forming a Developers Community for growth and success.</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-hero-right-bottom">
+                            <div class="margin-bottom-1">
+                                <p>(About Us)</p>
+                            </div>
+                            <div class="margin-bottom-2">
+                                <div class="margin-bottom-2-1">
+                                    <div class="overflow-hidden-4">
+                                        <h3>CREATIVE</h3>
+                                    </div>
+                                </div>
+                                <div class="margin-bottom-2-2">
+                                    <div class="overflow-hidden-5">
+                                        <h3>GAMES.</h3>
+                                    </div>
+                                </div>
+                                <div class="margin-bottom-2-3">
+                                    <div class="overflow-hidden-6">
+                                        <h3>POWERFUL</h3>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden-3">
+                                    <h3>MECHANICS.</h3>
+                                </div>
+                            </div>
+                            <div class="margin-bottom-3">
+                                <div class="max-width-large-1">
+                                    <text1>
+                                        We are dedicated to creating games and apps that inspire and endure.
+                                        Specializing in commercial, multipurpose, and entertainment,
+                                        we blend creativity with functionality to bring your vision to life.
+                                        Our approach is rooted in sustainability,
+                                        ensuring that each project not only meets current needs but also contributes positively to the current technology.
+                                    <text1>
+                                    <text2>
+                                        We work closely with clients, fostering a collaborative process that prioritizes your unique needs and preferences.
+                                        We believe that the best designs come from understanding the nuances of each project,
+                                        from the bustling energy of applications to the versatile requirements of game mechanics.
+                                    </text2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-home-projects">
+                <div class="section-top">
+                    <div class="div-block-0">
+                        <div class="margin-bottom-4">
+                            <div class="overflow-hidden-7">
+                                <textarea1>PROJECTS</textarea1>
+                            </div>
+                        </div>
+                        <div class="max-width-huge">
+                            <textarea2>Explore our recent projects showcasing creativity, innovation and impactful solutions.</textarea2>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-list-wrapper">
+                    <div class="collection-list">
+                        <div class="collection-item">
+                            <img src="Images/Unity-Emblem.png" alt="Item 1">
+                            <h2></h2>
+                            <p></p>
+                        </div>
+                        <div class="collection-item">
+                            <img src="Images/Unity-Emblem.png" alt="Item 2">
+                            <h2></h2>
+                            <p></p>
+                        </div>
+                        <div class="collection-item">
+                            <img src="Images/Unity-Emblem.png" alt="Item 3">
+                            <h2></h2>
+                            <p></p>
+                        </div>
+                        <div class="collection-item">
+                            <img src="Images/Unity-Emblem.png" alt="Item 4">
+                            <h2></h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-home-services">
+                <div class="section-top-1">
+                    <div class="div-block-1">
+                        <div class="margin-bottom-5">
+                            <div class="overflow-hidden-8">
+                                <textarea3>SERVICES</textarea3>
+                            </div>
+                        </div>
+                        <div class="max-width-huge-1">
+                            <textarea4>Discover our tailored services designed to elevate your brand, enhance user experience.</textarea4>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-service-item-0">
+                    <div class="home-services-item-image">
+                        <div class="service-image">
+                            <img src="Images/Game_Development.jpg" alt="service" class="image">
+                        </div>
+                    </div>
+                    <div class="home-service-item-content">
+                        <div class="margin-bottom-6">
+                            <div class="margin-bottom-7">
+                                <div class="overflow-hidden-9">
+                                    <textarea5>GAME</textarea5>
+                                </div>
+                            </div>
+                            <div class="margin-bottom-8">
+                                <div class="overflow-hidden-10">
+                                    <textarea6>DEVELOPMENT</textarea6>
+                                </div>
+                            </div>
+                            <div class="max-width-large-2">
+                                <textarea7>Crafting impactful games and applications that drive users to interact.</textarea7>
+                            </div>
+                        </div>
+                        <div class="div-block-2">
+                            <div class="margin-bottom-9">
+                                <textarea8>(Development Services)</textarea8>
+                            </div>
+                            <div class="home-services-list">
+                                <button id="serviceButton">Game Art & Design</button>
+                                <button id="serviceButton">Developing Mechanics</button>
+                                <button id="serviceButton">Code Architecture</button>
+                                <button id="serviceButton">Multi-Platform Porting</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-service-item-1">
+                    <div class="home-service-item-content">
+                        <div class="margin-bottom-6">
+                            <div class="margin-bottom-7">
+                                <div class="overflow-hidden-9">
+                                    <textarea5>GAME</textarea5>
+                                </div>
+                            </div>
+                            <div class="margin-bottom-8">
+                                <div class="overflow-hidden-10">
+                                    <textarea6>DESIGN</textarea6>
+                                </div>
+                            </div>
+                            <div class="max-width-large-2">
+                                <textarea7>Unique Game Design techniques that engage users and drive conversations.</textarea7>
+                            </div>
+                        </div>
+                        <div class="div-block-2">
+                            <div class="margin-bottom-9">
+                                <textarea8>(Design Services)</textarea8>
+                            </div>
+                            <div class="home-services-list">
+                                <button id="serviceButton">Game Design</button>
+                                <button id="serviceButton">Content Strategy</button>
+                                <button id="serviceButton">Documentation</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-services-item-image">
+                        <div class="service-image">
+                            <img src="Images/Game_Design.png" alt="service" class="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="home-service-item-2">
+                    <div class="home-services-item-image">
+                        <div class="service-image">
+                            <img src="Images/UI-UX_Design.jpg" alt="service" class="image">
+                        </div>
+                    </div>
+                    <div class="home-service-item-content">
+                        <div class="margin-bottom-6">
+                            <div class="margin-bottom-7">
+                                <div class="overflow-hidden-9">
+                                    <textarea5>UI/UX</textarea5>
+                                </div>
+                            </div>
+                            <div class="margin-bottom-8">
+                                <div class="overflow-hidden-10">
+                                    <textarea6>DESIGN</textarea6>
+                                </div>
+                            </div>
+                            <div class="max-width-large-2">
+                                <textarea7>User experience through intuitive and user-centered design solutions.</textarea7>
+                            </div>
+                        </div>
+                        <div class="div-block-2">
+                            <div class="margin-bottom-9">
+                                <textarea8>(UI/UX Services)</textarea8>
+                            </div>
+                            <div class="home-services-list">
+                                <button id="serviceButton">User Research</button>
+                                <button id="serviceButton">Usability Testing</button>
+                                <button id="serviceButton">Wireframing</button>
+                                <button id="serviceButton">UI/UX Audits</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-service-item-3">
+                    <div class="home-service-item-content">
+                        <div class="margin-bottom-6">
+                            <div class="margin-bottom-7">
+                                <div class="overflow-hidden-9">
+                                    <textarea5>APPLICATION</textarea5>
+                                </div>
+                            </div>
+                            <div class="margin-bottom-8">
+                                <div class="overflow-hidden-10">
+                                    <textarea6>DEVELOPMENT</textarea6>
+                                </div>
+                            </div>
+                            <div class="max-width-large-2">
+                                <textarea7>
+                                    Building various Applications for Android users to address specific needs,
+                                    automating business processes to providing entertainment or enhancing productivity on mobile devices.
+                                </textarea7>
+                            </div>
+                        </div>
+                        <div class="div-block-2">
+                            <div class="margin-bottom-9">
+                                <textarea8>(Application Development Services)</textarea8>
+                            </div>
+                            <div class="home-services-list">
+                                <button id="serviceButton">App Design</button>
+                                <button id="serviceButton">Building Applications</button>
+                                <button id="serviceButton">App Testing</button>
+                                <button id="serviceButton">Deployment and Hosting</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-services-item-image">
+                        <div class="service-image">
+                            <img src="Images/App_Development.jpg" alt="service" class="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <footer>
+        <p>© 2025 www.rader.co.in</p>
+        <div class="footer-top">
+            <div class="overflow-hidden-11">
+                <z>RADER'S HUB</z>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-nav">
+                <div class="footer-column-0">
+                    <text_area>(Pages)</text_area>
+                    <div class="nav">
+                        <button id="homeButtonFooter">Home</button>
+                        <button id="servicesButtonFooter">Services</button>
+                        <button id="aboutButtonFooter">About</button>
+                        <button id="contactButtonFooter">Contact</button>
+                    </div>
+                </div>
+                <div class="footer-column-1">
+                    <text_area>(Join Us)</text_area>
+                    <div class="nav">
+                        <button id="signInButtonFooter">Sign In</button>
+                        <button id="registerButtonFooter">Register</button>
+                        <button id="forumsButtonFooter">Forums</button>
+                        <button id="uploadsButtonFooter">Uploads</button>
+                    </div>
+                </div>
+                <div class="footer-column-2">
+                    <text_area>(Socials)</text_area>
+                    <div class="nav">
+                        <button id="instagramButtonFooter">Instagram</button>
+                        <button id="linkedinButtonFooter">LinkedIn</button>
+                        <button id="youtubeButtonFooter">Youtube</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-grid">
+                <textareafooter>Made by MounaRadoHabu Development (OPC) Private Limited</textareafooter>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
